@@ -18,7 +18,7 @@ public class BinanceWebSocketApp {
     private static final Logger logger = LoggerFactory.getLogger(BinanceWebSocketApp.class);
 
     public static void main(String[] args) {
-        System.out.println("\n🚀 Binance WebSocket Client (Java)");
+        System.out.println("\n Binance WebSocket Client (Java)");
         System.out.println("===================================\n");
 
         // Get available stream configurations
@@ -91,7 +91,7 @@ public class BinanceWebSocketApp {
             logger.error("Application error: {}", e.getMessage(), e);
         } finally {
             client.close();
-            System.out.println("\nGoodbye! 👋");
+            System.out.println("\nGoodbye!");
         }
     }
 }
