@@ -91,7 +91,7 @@ public class BinanceWebSocketApp {
             logger.error("Application error: {}", e.getMessage(), e);
         } finally {
             client.close();
-            System.out.println("\nGoodbye!");
+            System.out.println("\nGoodbye!t;yeetiirekppoitwq3io834567890=-09oi7u6y5t43e2w1qw34567890-='jt");
         }
     }
 }
