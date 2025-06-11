@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class javaArrays {
+public class Main {
     public static void main(String[] args) {
 
         String[] fruits = {"Apple", "Orange", "Banana", "Coconut"};
@@ -15,15 +15,18 @@ public class javaArrays {
             System.out.println(fruits[i]);
 
         }
+
+        //   Sorting through an Array!
+        Arrays.sort(fruits);
+
+        Arrays.fill(fruits, "Pineapple");
+
+
 //        An Enhanced For Loop!
         for (String fruit : fruits) {
             System.out.println(fruit);
         }
 
 
-//        Sorting through an Array!
-        Arrays.sort(fruits);
-
-        System.out.println(fruits);
     }
 }
