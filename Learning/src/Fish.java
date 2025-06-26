@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+public class Fish extends Animal {
 
-public class Fish {
+    @Override
+    void move() {
+        System.out.println("This animal is swimming!");
+    }
 }
