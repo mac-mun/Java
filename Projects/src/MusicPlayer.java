@@ -9,7 +9,7 @@ public class MusicPlayer {
 
 //        How to Play Audio with Java(.wav .au .aiff)
 
-        String filePath = "Long Distance - Mark Karan, Scott Guberman, Angeline Saris, Jeremy Hoenig.wav";
+        String filePath = " ";
 
         File file = new File(filePath);
         try (AudioInputStream audioStream = AudioSystem.getAudioInputStream(file)) {
@@ -17,7 +17,7 @@ public class MusicPlayer {
             Clip clip = AudioSystem.getClip();
             clip.open(audioStream);
             System.out.println("No Problemo! ");
-            
+
         } catch (FileNotFoundException e) {
             System.out.println("Could Not Locate File!!");
         } catch (UnsupportedAudioFileException e) {
