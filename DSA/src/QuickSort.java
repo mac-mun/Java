@@ -2,6 +2,19 @@ public class QuickSort {
     public static void main(String[] args) {
         // Recursive Divide and Conquer Algorithm
 
+        /*
+         * Quick Sort = Moves smaller elements to the left of a pivot
+         *               recursively divides array in 2 partitions
+         *
+         * Run-TIme Complexity = Best Case O(n log(n))
+         *                       Average Case O(n log(n))
+         *                       Worst Case O(n^2) if already sorted
+         *
+         * Space Complexity = O(log(n)) due to recursion
+         *
+         * */
+
+
         int[] array = {8, 2, 5, 3, 9, 4, 7, 6, 1};
 
         quickSort(array, 0, array.length - 1);
