@@ -25,8 +25,7 @@ public class AdjacencyMatrix {
 
         graph.print();
 
-        System.out.println(graph.checkEdge(3, 2));
-
+        graph.depthFirstSearch(4);
 
     }
 }
