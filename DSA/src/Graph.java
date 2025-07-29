@@ -1,5 +1,6 @@
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Queue;
+import java.util.LinkedList;
 
 public class Graph {
 
@@ -46,27 +47,32 @@ public class Graph {
             }
             System.out.println();
         }
+        System.out.println();
     }
 
-    public void depthFirstSearch(int src) {
+
+    public void breadthFirstSearch(int src) {
+
+        Queue<Integer> queue = new LinkedList<>();
         boolean[] visited = new boolean[matrix.length];
-        dFSHelper(src, visited);
 
-    }
+        queue.offer(src);
+        visited[src] = true;
 
-    private void dFSHelper(int src, boolean[] visited) {
-        if (visited[src]) {
-            return;
-        } else {
-            visited[src] = true;
-            System.out.println(nodes.get(src).data + " = visited");
-        }
-        for (int i = 0; i < matrix[src].length; i++) {
-            if (matrix[src][i] == 1) {
-                dFSHelper(i, visited);
+        while (queue.size() != 0) {
+            src = queue.poll();
+            System.out.println(nodes.get(src).data + " = visited!");
+
+            for (int i = 0; i < matrix[src].length; i++) {
+                if (matrix[src][i] == 1 && !visited[i]) {
+                    queue.offer(i);
+                    visited[i] = true;
+                }
+
             }
         }
-        return;
+
     }
+
 
 }

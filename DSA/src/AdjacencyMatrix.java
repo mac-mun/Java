@@ -1,11 +1,16 @@
 public class AdjacencyMatrix {
     public static void main(String[] args) {
         /*
-         * Adjacency Matrix =  A 2D Array to store 1's/0's to represent Edges
-         *                     # of rows = # of unique nodes
-         *                     # of columns = # of unique nodes
-         *                     runtime complexity to check an Edge: 0(1)
-         *                     space complexity: O(v^2)
+         * Breadth First Search = Traverse a Graph Level by Level
+         *                        Utilizes a Queue
+         *                        Better if destination is on average close to start
+         *                        Siblings are visited before children
+         *
+         * Depth First Search =  Traverse a Graph branch by branch
+         *                       Utilizes a Stack
+         *                       Better if destination is on average fae from the start
+         *                       Children are visited before siblings
+         *                       More popular for games/puzzles
          * */
 
         Graph graph = new Graph(5);
@@ -25,7 +30,7 @@ public class AdjacencyMatrix {
 
         graph.print();
 
-        graph.depthFirstSearch(4);
+        graph.breadthFirstSearch(1);
 
     }
 }
