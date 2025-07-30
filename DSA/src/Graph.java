@@ -4,16 +4,16 @@ import java.util.LinkedList;
 
 public class Graph {
 
-    ArrayList<Node> nodes;
+    ArrayList<NodE> nodES;
     int[][] matrix;
 
     Graph(int size) {
-        nodes = new ArrayList<>();
+        nodES = new ArrayList<>();
         matrix = new int[size][size];
     }
 
-    public void addNode(Node node) {
-        nodes.add(node);
+    public void addNode(NodE node) {
+        nodES.add(node);
     }
 
     public void addEdge(int src, int dst) {
@@ -33,14 +33,14 @@ public class Graph {
 
         System.out.print("  ");
 
-        for (Node node : nodes) {
+        for (NodE node : nodES) {
             System.out.print(node.data + " ");
         }
         System.out.println();
 
         for (int i = 0; i < matrix.length; i++) {
 
-            System.out.print(nodes.get(i).data + " ");
+            System.out.print(nodES.get(i).data + " ");
             for (int j = 0; j < matrix[i].length; j++) {
                 System.out.print(matrix[i][j] + " ");
 
@@ -61,7 +61,7 @@ public class Graph {
 
         while (queue.size() != 0) {
             src = queue.poll();
-            System.out.println(nodes.get(src).data + " = visited!");
+            System.out.println(nodES.get(src).data + " = visited!");
 
             for (int i = 0; i < matrix[src].length; i++) {
                 if (matrix[src][i] == 1 && !visited[i]) {

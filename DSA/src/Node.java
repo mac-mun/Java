@@ -1,9 +1,9 @@
 public class Node {
+    int data;
+    Node left;
+    Node right;
 
-    char data;
-    
-
-    Node(char data) {
+    public Node(int data) {
         this.data = data;
     }
 }

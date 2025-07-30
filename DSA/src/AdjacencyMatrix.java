@@ -15,11 +15,11 @@ public class AdjacencyMatrix {
 
         Graph graph = new Graph(5);
 
-        graph.addNode(new Node('A'));
-        graph.addNode(new Node('B'));
-        graph.addNode(new Node('C'));
-        graph.addNode(new Node('D'));
-        graph.addNode(new Node('E'));
+        graph.addNode(new NodE('A'));
+        graph.addNode(new NodE('B'));
+        graph.addNode(new NodE('C'));
+        graph.addNode(new NodE('D'));
+        graph.addNode(new NodE('E'));
 
         graph.addEdge(0, 1);
         graph.addEdge(1, 2);
